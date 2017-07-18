@@ -8,14 +8,20 @@ import json
 import csv
 import codecs
 import time
-import re
+
 
 start = time.clock()
 driver = webdriver.PhantomJS()
-# driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D%270%27%2CComposite(CI.CIId%3D2326489083))&q=papers%20in\
-# %20conference%20ICDM%202016&filters=&from=0&sort=1")
-driver.get('https://academic.microsoft.com/#/search?iq=And(Ty%3D%270%27%2CComposite(C.CId%3D1183478919))&q=papers%20in\
-%20conference%20icdm&filters=&from=0&sort=0')
+driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(CI.CIId%3D2326489083))&q=papers%20in\
+%20conference%20ICDM%202016&filters=&from=0&sort=1")
+
+
+
+# driver.get('https://academic.microsoft.com/#/search?iq=And(Ty%3D%270%27%2CComposite(C.CId%3D1183478919))&q=papers%20in\
+# %20conference%20icdm&filters=&from=0&sort=0')
+
+
+
 # driver.get("http://pythonscraping.com/pages/javascript/ajaxDemo.html")
 # try:
 #     element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "loadedButton")))
@@ -26,7 +32,7 @@ driver.implicitly_wait(10)
 
 
 def get_content(d, mode):
-    pattern = re.compile(r'\+ \d others')
+  
     button = d.find_elements_by_partial_link_text('+ other')
     for b in button:
         b.click()
@@ -47,7 +53,9 @@ def get_content(d, mode):
     times = d.find_elements_by_class_name('paper-year')
     venues = d.find_elements_by_class_name('paper-venue')
 
-
+    #if an article is lacked of one or two elements:
+    if len(abstracts)<len(authors):
+    	
     for i in range(len(authors)):
         rows[i]['author'] = authors[i].text
         rows[i]['abstract'] = abstracts[i].text

@@ -4,6 +4,7 @@ import csv
 import time
 from selenium.common.exceptions import NoSuchElementException        
 # start = time.clock()
+import re
 service_args=[]
 service_args.append('--load-images=no')  ##关闭图片加载
 service_args.append('--disk-cache=yes')  ##开启缓存
@@ -12,9 +13,9 @@ service_args.append('--ignore-ssl-errors=true') ##忽略https错误
 driver = webdriver.PhantomJS("C:\ProgramData\Anaconda3\Scripts\phantomjs.exe",service_args=service_args)
 # driver = webdriver.PhantomJS()
 # s=time.clock()
-driver.get("https://academic.microsoft.com/#/search?iq=%40ICDM%40&q=ICDM&filters=&from=1736&sort=1")
+driver.get("https://academic.microsoft.com/#/search?iq=%40ICDM%40&q=ICDM&filters=&from=4927&sort=1")
 # driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1120384002))&q=papers%20in%20conference%20wsdm&filters=&from=0&sort=0")#WSDM
-print('get wsdm _test')
+print('get icdm')
 
 
 driver.implicitly_wait(10)
@@ -65,8 +66,12 @@ def split_empty(s):
 def get_content(d, mode):
     # s1=time.clock()
     button = d.find_elements_by_partial_link_text(' other')
+    # button = d.find_elements_by_xpath()
+    pattern = re.compile(r'^\+\d+ others?')   
     for b in button:
-        b.click()
+        if pattern.match(b.text):
+            b.click()
+        # print(b.text)
     # s2=time.clock()
 
     headers = ['title', 'author', 'authorID','abstract', 'time', 'venue','field']
@@ -153,6 +158,6 @@ while True:
 
 driver.close()
 # end = time.clock()
-
+driver.quit()
 # print(end-start)
 

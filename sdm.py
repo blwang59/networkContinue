@@ -16,8 +16,8 @@ driver = webdriver.PhantomJS(
     "C:\ProgramData\Anaconda3\Scripts\phantomjs.exe", service_args=service_args)
 # driver = webdriver.PhantomJS()
 # s=time.clock()
-driver.get("https://academic.microsoft.com/#/search?iq=%40papers%20in%20conference%20SDM%40&q=papers%20in%20conference%20SDM&filters=&from=0&sort=1")
-print('get SDM')
+driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1135342153))&q=papers%20in%20conference%20www&filters=&from=0&sort=1")
+print('get www')
 
 
 driver.implicitly_wait(10)
@@ -174,7 +174,7 @@ def get_content(d, mode):
     # for i in rows:
     #     print(i.items())
     # with codecs.open('./tests/acdatas_ICDM.csv',mode, encoding='utf-8') as f:
-    with codecs.open('./tests/acdatas_SDM.csv', mode, encoding='utf-8') as f:
+    with codecs.open('./results/acdatas_WWW.csv', mode, encoding='utf-8') as f:
         f_csv = csv.DictWriter(f, headers)
         # f_csv.writeheader()
         f_csv.writerows(rows)
@@ -191,5 +191,5 @@ while True:
 
 driver.close()
 # end = time.clock()
-driver.quit()
+# driver.quit()
 # print(end-start)

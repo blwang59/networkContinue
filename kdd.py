@@ -13,9 +13,9 @@ service_args.append('--ignore-ssl-errors=true') ##忽略https错误
 driver = webdriver.PhantomJS("C:\ProgramData\Anaconda3\Scripts\phantomjs.exe",service_args=service_args)
 # driver = webdriver.PhantomJS()
 # s=time.clock()
-driver.get("https://academic.microsoft.com/#/search?iq=%40papers%20in%20conference%20kdd%40&q=papers%20in%20conference%20kdd&filters=&from=296&sort=1")
-# driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1120384002))&q=papers%20in%20conference%20wsdm&filters=&from=0&sort=0")#WSDM
-print('get kdd')
+# driver.get("https://academic.microsoft.com/#/search?iq=%40papers%20in%20conference%20kdd%40&q=papers%20in%20conference%20kdd&filters=&from=3312&sort=1")#from here the kdd fields without semicommas
+driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(CI.CIId%3D2328296654))&q=papers%20in%20conference%20KDD%202012&filters=&from=0&sort=1")#WSDM
+print('get kdd 2012')
 
 
 
@@ -68,18 +68,34 @@ def split_empty(s):
 
 def get_content(d, mode):
     # s1=time.clock()
+
     button = d.find_elements_by_partial_link_text(' other')
     pattern = re.compile(r'.*\+\d+ others?')   
     for b in button:
         if pattern.match(b.text):
             b.click()
+
     # s2=time.clock()
 
-    headers = ['title', 'author', 'authorID','abstract', 'time', 'venue','field']
+    headers = ['title', 'author', 'authorID',
+               'abstract', 'time', 'venue', 'field']
     rows = []
     titles = d.find_elements_by_class_name('paper-title')
 
+
+
+
     authors = d.find_elements_by_class_name('paper-authors')
+    
+    authors_list = []
+    for a in authors:
+        author_string = ""
+        every_author = a.find_elements_by_css_selector('li')
+        for a1 in every_author:
+            author_string += (a1.text+';')
+        authors_list.append(author_string)
+
+
     abstracts = d.find_elements_by_class_name('paper-abstract')
     # print('abstract:'+str(len(abstracts)))
     abstracts = split_empty(abstracts)
@@ -89,28 +105,38 @@ def get_content(d, mode):
     aIDs = d.find_elements_by_class_name('authorIds')
     fields = d.find_elements_by_class_name('paper-fieldsOfStudy')
     # print('fields:'+str(len(fields)))
-    fields =split_empty(fields)
+    fields = split_empty(fields)
+    # print('fields:'+str(len(fields)))
+    fields_list = []
+    # print(len(fields))
+    for f in fields:
+        field_string = ""
+        every_field = f.find_elements_by_css_selector('li')
+        for f1 in every_field:
+            field_string += (f1.text+';')
+        fields_list.append(field_string)
+        # print('1'+field_string)
     # print('fields:'+str(len(fields)))
     
    
-    authors = [a.text for a in authors]
+    # authors = [a.text for a in authors]
     abstracts = [a.text for a in abstracts]
     times = [a.text for a in times]
     venues = [a.text for a in venues]
     aIDs = [str(a.get_attribute('value')) for a in aIDs]
-    fields = [a.text for a in fields]
+    # fields = [a.text for a in fields]
 
 
     # s3=time.clock()
     
     # #if an article is lacked of one or two elements:
     # s1=time.clock()
-    find_lacks(authors,'paper-authors',d)
+    find_lacks(authors_list,'paper-authors',d)
     find_lacks(abstracts,'paper-abstract',d)
     find_lacks(times,'paper-year',d)
     find_lacks(venues,'paper-venue',d)
     find_lacks(aIDs,'paper-authorIds',d)
-    find_lacks(fields,'paper-fieldsOfStudy',d)
+    find_lacks(fields_list,'paper-fieldsOfStudy',d)
      
     # s2=time.clock()
     # print('find_lacks time is'+ str(s2-s1)) 
@@ -120,6 +146,7 @@ def get_content(d, mode):
     # print('after')
     # for i in range(len(fields)):
     #     print(fields[i])
+    # print ('time of get commas:'+str(s3-s2))
 
     for title in titles:
         rows.append({'title': title.text,
@@ -133,28 +160,30 @@ def get_content(d, mode):
 
         
     for i in range(len(authors)):
-        rows[i]['author'] = authors[i]
+        rows[i]['author'] = authors_list[i]
         rows[i]['authorID'] = aIDs[i]
         rows[i]['abstract'] = abstracts[i]
         rows[i]['time'] = times[i]
         rows[i]['venue'] = venues[i] 
-        rows[i]['field'] = fields[i]
+        rows[i]['field'] = fields_list[i]
     
     # for i in rows:
     #     print(i.items())
     # with codecs.open('./tests/acdatas_ICDM.csv',mode, encoding='utf-8') as f:
-    with codecs.open('./tests/acdatas_KDD_final.csv',mode, encoding='utf-8') as f:
+    with codecs.open('./tests/acdatas_KDD_2012.csv',mode, encoding='utf-8') as f:
         f_csv = csv.DictWriter(f, headers)
         # f_csv.writeheader()
         f_csv.writerows(rows)
 
-get_content(driver, 'a+')
+get_content(driver, 'w')
 while True:
     try:
         link = driver.find_element_by_class_name('icon-angle-right')
     except NoSuchElementException:
         break
+
     link.click()
+
     get_content(driver,'a+')
 
 driver.close()

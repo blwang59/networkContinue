@@ -15,8 +15,8 @@ service_args.append('--ignore-ssl-errors=true')  # 忽略https错误
 driver = webdriver.PhantomJS( "C:\ProgramData\Anaconda3\Scripts\phantomjs.exe",service_args=service_args)
 # driver = webdriver.PhantomJS()
 # s=time.clock()
-driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1142743330))&q=papers%20in%20conference%20sdm&filters=&from=1128&sort=1")
-print('get SDM')
+driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1142743330))&q=papers%20in%20conference%20sdm&filters=&from=3224&sort=1")
+print('get SDM tests')
 
 
 driver.implicitly_wait(10)
@@ -36,18 +36,25 @@ ranges = [
     {"from": ord(u"\U0002b820"), "to": ord(u"\U0002ceaf")}  # included as of Unicode 8.0
 ]
 
+
 def is_cjk(char):
     return any([range["from"] <= ord(char) <= range["to"] for range in ranges])
 
-def cjk_substrings(string):
-    i = 0
-    while i<len(string):
-        if is_cjk(string[i]):
+
+def is_cjk_string(string):
+    # i = 0
+    # while i<len(string):
+    #     if is_cjk(string[i]):
+    #         return True
+    #   # start = i
+    #   # while is_cjk(string[i]): i += 1
+    #   # yield string[start:i]
+    # i += 1
+    for i in string:
+        if is_cjk(i):
             return True
-      # start = i
-      # while is_cjk(string[i]): i += 1
-      # yield string[start:i]
-    i += 1
+    return False
+
 
 def check_exists_by_class_name(webelement, name):
     try:
@@ -73,7 +80,7 @@ def find_lacks(ele_lists, ele_webs, d):
 
         for element in papers:
             flag.append(len(element.find_elements_by_class_name(ele_webs)))
-            if check_exists_by_class_name(element, ele_webs) == False:
+            if check_exists_by_class_name(element, ele_webs) is False:
                 flag.append(0)
             #     flag.append('1')
             # else:
@@ -118,30 +125,39 @@ def get_content(d, mode):
     rows = []
     titles = d.find_elements_by_class_name('paper-title')
 
-    jap = []
+    njap = []
     i = 0
     for title in titles:
-        if cjk_substrings(title.text):
-            jap.append(i)
-        i+=1
-
-    for i in jap:
-        del titles[i]
+        if is_cjk_string(title.text) is False:
+            njap.append(i)
+        i += 1  
+        
+    #tests
+    # for i in jap:
+    #     print(str(i))
     
+    # for i in jap:
+    #     del titles[i]
+    # temp = []
+    # for i in njap:
+    #     temp.append(titles[i])
+    # titles = temp
+  
+
 
     authors = d.find_elements_by_class_name('paper-authors')
-    
-    for i in jap:
-        del authors[i]
+    # temp = []
+    # for i in njap:
+    #     temp.append(authors[i])
+    # authors = temp
 
     authors_list = []
     for a in authors:
         author_string = ""
         every_author = a.find_elements_by_css_selector('li')
         for a1 in every_author:
-            author_string += (a1.text+';')
+            author_string += (a1.text + ';')
         authors_list.append(author_string)
-
 
     abstracts = d.find_elements_by_class_name('paper-abstract')
     # print('abstract:'+str(len(abstracts)))
@@ -160,10 +176,9 @@ def get_content(d, mode):
         field_string = ""
         every_field = f.find_elements_by_css_selector('li')
         for f1 in every_field:
-            field_string += (f1.text+';')
+            field_string += (f1.text + ';')
         fields_list.append(field_string)
         # print('1'+field_string)
-
 
     # authors = [a.text for a in authors]
     abstracts = [a.text for a in abstracts]
@@ -171,16 +186,6 @@ def get_content(d, mode):
     venues = [a.text for a in venues]
     aIDs = [str(a.get_attribute('value')) for a in aIDs]
     # fields = [a.text for a in fields]
-
-    for i in jap:
-        del abstracts[i]
-
-    for i in jap:
-        del times[i]
-    for i in jap:
-        del venues[i]
-    for i in jap:
-        del aIDs[i]
     # s3=time.clock()
 
     # #if an article is lacked of one or two elements:
@@ -191,6 +196,41 @@ def get_content(d, mode):
     find_lacks(venues, 'paper-venue', d)
     find_lacks(aIDs, 'paper-authorIds', d)
     find_lacks(fields_list, 'paper-fieldsOfStudy', d)
+
+    temp = []
+    for i in njap:
+        temp.append(titles[i])
+    titles = temp
+
+    temp = []
+    for i in njap:
+        temp.append(authors_list[i])
+    authors_list = temp
+
+    temp = []
+    for i in njap:
+        temp.append(abstracts[i])
+    abstracts = temp
+
+    temp = []
+    for i in njap:
+        temp.append(times[i])
+    times = temp
+
+    temp = []
+    for i in njap:
+        temp.append(venues[i])
+    venues = temp
+
+    temp = []
+    for i in njap:
+        temp.append(aIDs[i])
+    aIDs = temp
+
+    temp = []
+    for i in njap:
+        temp.append(fields_list[i])
+    fields_list = temp
 
     # s2=time.clock()
     # print('find_lacks time is'+ str(s2-s1))
@@ -210,7 +250,7 @@ def get_content(d, mode):
                      'venue': '',
                      'field': ''})
 
-    for i in range(len(authors)):
+    for i in range(len(titles)):
         rows[i]['author'] = authors_list[i]
         rows[i]['authorID'] = aIDs[i]
         rows[i]['abstract'] = abstracts[i]
@@ -221,20 +261,21 @@ def get_content(d, mode):
     # for i in rows:
     #     print(i.items())
     # with codecs.open('./tests/acdatas_ICDM.csv',mode, encoding='utf-8') as f:
-    with codecs.open('./results/acdatas_SDM_test_jap.csv', mode, encoding='utf-8') as f:
+    with codecs.open('./results/acdatas_SDM_test_3224.csv', mode, encoding='utf-8') as f:
         f_csv = csv.DictWriter(f, headers)
         # f_csv.writeheader()
         f_csv.writerows(rows)
 
+
 get_content(driver, 'w')
 
-# while True:
-#     try:
-#         link = driver.find_element_by_class_name('icon-angle-right')
-#     except NoSuchElementException:
-#         break
-#     link.click()
-#     get_content(driver, 'a+')
+while True:
+    try:
+        link = driver.find_element_by_class_name('icon-angle-right')
+    except NoSuchElementException:
+        break
+    link.click()
+    get_content(driver, 'a+')
 
 driver.close()
 # end = time.clock()

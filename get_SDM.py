@@ -13,11 +13,13 @@ service_args.append('--disk-cache=yes')  # 开启缓存
 service_args.append('--ignore-ssl-errors=true')  # 忽略https错误
 
 driver = webdriver.PhantomJS(
-    "C:\ProgramData\Anaconda3\Scripts\phantomjs.exe", service_args=service_args)
+    "C:\ProgramData\Anaconda3\Scripts\phantomjs.exe",
+    service_args=service_args)
 # driver = webdriver.PhantomJS()
 # s=time.clock()
-driver.get("https://academic.microsoft.com/#/search?iq=%40papers%20in%20conference%20SDM%40&q=papers%20in%20conference%20SDM&filters=&from=1280&sort=1")
-print('get SDM')
+
+driver.get("https://academic.microsoft.com/#/search?iq=And(Ty%3D'0'%2CComposite(C.CId%3D1183478919))&q=papers%20in%20conference%20icdm&filters=&from=4272&sort=1")
+print('get ICDM')
 
 
 driver.implicitly_wait(10)
@@ -48,7 +50,7 @@ def find_lacks(ele_lists, ele_webs, d):
 
         for element in papers:
             flag.append(len(element.find_elements_by_class_name(ele_webs)))
-            if check_exists_by_class_name(element, ele_webs) == False:
+            if check_exists_by_class_name(element, ele_webs) is False:
                 flag.append(0)
             #     flag.append('1')
             # else:
@@ -94,15 +96,14 @@ def get_content(d, mode):
     titles = d.find_elements_by_class_name('paper-title')
 
     authors = d.find_elements_by_class_name('paper-authors')
-    
+
     authors_list = []
     for a in authors:
         author_string = ""
         every_author = a.find_elements_by_css_selector('li')
         for a1 in every_author:
-            author_string += (a1.text+';')
+            author_string += (a1.text + ';')
         authors_list.append(author_string)
-
 
     abstracts = d.find_elements_by_class_name('paper-abstract')
     # print('abstract:'+str(len(abstracts)))
@@ -121,10 +122,9 @@ def get_content(d, mode):
         field_string = ""
         every_field = f.find_elements_by_css_selector('li')
         for f1 in every_field:
-            field_string += (f1.text+';')
+            field_string += (f1.text + ';')
         fields_list.append(field_string)
         # print('1'+field_string)
-
 
     authors = [a.text for a in authors]
     abstracts = [a.text for a in abstracts]
@@ -132,7 +132,6 @@ def get_content(d, mode):
     venues = [a.text for a in venues]
     aIDs = [str(a.get_attribute('value')) for a in aIDs]
     # fields = [a.text for a in fields]
-
 
     # s3=time.clock()
 
@@ -174,13 +173,13 @@ def get_content(d, mode):
     # for i in rows:
     #     print(i.items())
     # with codecs.open('./tests/acdatas_ICDM.csv',mode, encoding='utf-8') as f:
-    with codecs.open('./results/acdatas_SDM.csv', mode, encoding='utf-8') as f:
+    with codecs.open('./results/acdatas_ICDM.csv', mode, encoding='utf-8') as f:
         f_csv = csv.DictWriter(f, headers)
         # f_csv.writeheader()
         f_csv.writerows(rows)
 
-get_content(driver, 'a+')
 
+get_content(driver, 'a+')
 while True:
     try:
         link = driver.find_element_by_class_name('icon-angle-right')

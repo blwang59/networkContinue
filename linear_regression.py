@@ -1,4 +1,7 @@
-from sklearn import linear_model
-reg = linear_model.LinearRegression()
-reg.fit([[0, 0], [1, 1], [2, 2]], [0, 1, 2])
+import matplotlib.pyplot as plt
+import numpy as np 
+from sklearn import datasets, linear_model
 
+diabetes = datasets.load_diabetes()
+
+diabetes_X = diabetes.data[:, np.newaxis, ]

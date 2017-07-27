@@ -43,20 +43,21 @@ def tell_if_cs(lists):
     return False
 
 def tell_if_reports(title):
-    pattern = re.compile(r'.*((R|r)eport)|((W|w)orkshop).*')
+    # pattern = re.compile(r'.*((R|r)eport)|((W|w)orkshop)|(KDD)|((p|P)roceedings).*')
+    pattern = re.compile(r'(.$)|')
     if pattern.match(title):
         return True
     return False
 
 
-with open('./del_japaneses/KDD_after.csv', encoding='utf-8') as f:
-    with open('./del_reports/KDD_select_cs.csv', 'w', encoding='utf-8', newline='') as wf:
+with open('C:/Users/Administrator.WIN-C4UPVO2L26B/Desktop/del_japaneses/KDD_after.csv', encoding='utf-8') as f:
+    with open('./del_reports/KDD_selected.csv', 'w', encoding='utf-8', newline='') as wf:
         f_csv = csv.reader(f)
         fw_csv = csv.writer(wf)
         for row in f_csv:
             # if (is_cjk_string(row[1]) is False):
             # if tell_if_cs(row[-1]) is True:
-            if tell_if_reports(row[0]) is False:
+            if tell_if_reports(row[0]) is False :
                 fw_csv.writerow(row)
 
 

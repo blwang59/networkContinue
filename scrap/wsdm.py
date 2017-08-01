@@ -139,12 +139,12 @@ def get_content(d, mode):
     # for i in rows:
     #     print(i.items())
     # with codecs.open('./tests/acdatas_ICDM.csv',mode, encoding='utf-8') as f:
-    with codecs.open('./tests/acdatas_WSDM.csv',mode, encoding='utf-8') as f:
+    with codecs.open('./tests/WSDMtests.csv',mode, encoding='utf-8') as f:
         f_csv = csv.DictWriter(f, headers)
         # f_csv.writeheader()
         f_csv.writerows(rows)
 
-get_content(driver, 'a+')
+get_content(driver, 'w')
 while True:
     try:
         link = driver.find_element_by_class_name('icon-angle-right')

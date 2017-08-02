@@ -1,33 +1,28 @@
+# -*- coding: utf-8 -*-
 import json
 import random
 import codecs
 
-network = json.load(open('./network_dict_0728_weight_time.json'))
+
+network = json.load(open('./network_dict_0802_time_weight_right.json', encoding='utf-8', errors='ignore'))
 
 
 def ICmodel(net, seeds, times):
-    fr = open('./inter_res/ICres_' + seeds + '.txt', 'w', encoding='utf-8')
+    fr = open('./inter_res/ICres_' + seeds + '.txt', 'w', encoding='utf-8', errors='ignore')
     for i in range(times):
         target = []
         active = []
-    # for i in net:
-    #   for j in net[i]:
-    #neighbor_dict = net[seeds]
-    #neighbor_q = neighbor_dict.keys()
-    #fr = open('./ICres.txt', 'w', encoding='utf-8')
+
         target.append(seeds)
         active.append(seeds)
-        # ltimes = 0
-        while(target):
-            # ltimes+=1
-            node = target.pop()
 
-            # active.append(node)
+        while(target):
+
+            node = target.pop()
             if node in net:
                 for follower in net[node]:
                     if follower not in active:
                         if random.random() <= net[node][follower]:
-
                             target.append(follower)
                             active.append(node)
                             fr.write(node + '->' + follower + '\n')
@@ -38,43 +33,29 @@ def ICmodel(net, seeds, times):
 
 
 def draw_trees(docsource, docdes):
-    # count = {}
-    edge_count = {}
-    # count the times which the nodes are activated
-    # with codecs.open(docsource, 'r', encoding='utf-8', errors='ignore') as f:
-    #     for line in f:
-    #       l = line.rstrip().split('->',1)
-    #       if(len(l)>1):
-    #           if l[1] not in count:
-    #               count[l[1]] = 1
-    #           else:
-    #               count[l[1]] += 1
 
-    # count the times which the edges are activated
+    edge_count = {}
+
     with codecs.open(docsource, 'r', encoding='utf-8', errors='ignore') as f:
         for line in f:
             l = line.rstrip().split('->', 1)
-            if(len(l) > 1):
+            if len(l) > 1:
                 if '"' + l[0] + '" -> "' + l[1] + '"' not in edge_count:
                     edge_count['"' + l[0] + '" -> "' + l[1] + '"'] = 1
                 else:
                     edge_count['"' + l[0] + '" -> "' + l[1] + '"'] += 1
 
-    fr = open(docdes, 'w')
+    fr = open(docdes, 'w', encoding='utf-8')
     fr.write('strict digraph G{\n')
-    names = json.load(open('./inter_res/name_per_author.json'))
+    names = json.load(open('./inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
     for edge in edge_count:
-        if edge_count[edge] >= 50:
+        if edge_count[edge] >= 2:
             fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
-                     '" -> "' + names[edge.split('->')[1].strip().strip('"')] +'"' + '\n')
-            # fr.write(edge+'\n')
+                     '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
 
-    # for i in count:
-    #     if count[i]>=50:
-    #         fr.write('"'+i+'"'+' [color = red]')
     fr.write('}')
     fr.close()
 
 ICmodel(network, "2136372366", 100)
-draw_trees('./inter_res/ICres_2136372366.txt',
-           './inter_res/chenenhong_time_50.dot')
+
+draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_2_1631.dot')

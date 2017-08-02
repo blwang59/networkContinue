@@ -21,7 +21,7 @@ import codecs
             
 
 per_name = {}
-with codecs.open('./data/all.csv', 'r', encoding='utf-8') as f:
+with codecs.open('D:/WBL/networkContinue/scrap/tests/bigger_all.csv', 'r', encoding='utf-8', errors='ignore') as f:
     f_csv = csv.reader(f)
     for row in f_csv:
         nums = row[2].split(',')
@@ -32,5 +32,5 @@ with codecs.open('./data/all.csv', 'r', encoding='utf-8') as f:
                 if nums[i] not in per_name:
                     per_name[nums[i]] = names[i]
 
-frname = open('./inter_res/name_per_author.json', 'w', encoding='utf-8')
+frname = open('./inter_res/name_per_author.json', 'w', encoding='utf-8', errors='ignore')
 json.dump(per_name, frname, ensure_ascii='false')

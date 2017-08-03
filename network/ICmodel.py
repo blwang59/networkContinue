@@ -4,7 +4,7 @@ import random
 import codecs
 
 
-network = json.load(open('./network_dict_0802_time_weight_right.json', encoding='utf-8', errors='ignore'))
+network = json.load(open('./network_dict_0803_one_hop_strict_time_avg_weight.json', encoding='utf-8', errors='ignore'))
 
 
 def ICmodel(net, seeds, times):
@@ -58,4 +58,4 @@ def draw_trees(docsource, docdes):
 
 ICmodel(network, "2136372366", 100)
 
-draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_2_1631.dot')
+draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_2_one_hop_avg_weight.dot')

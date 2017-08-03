@@ -39,21 +39,49 @@ with codecs.open('D:/WBL/networkContinue/scrap/tests/bigger_all.csv', 'r', encod
 
     for row in f_csv:
         authors = row[2].split(',')
-
-        if '2136372366' in authors and authors.index['2136372366'] != 1:
-            one_hop.append(authors[0])
+        time = float(row[4].split('-')[0])
+        if '2136372366' in authors:
+            if authors[0] != '2136372366' and first_time['2136372366'] < first_time[authors[0]]:
+                one_hop.append(authors[0])
+                if '2136372366' not in network or authors[0] not in network['2136372366']:
+                    add_networks(network, '2136372366', authors[0],
+                                 [(last_time[authors[0]] - time + 1) / (last_time[authors[0]] - first_time[authors[0]] + 1)])
+                else:
+                    weight = (last_time[authors[0]]-time+1)/(last_time[authors[0]]-first_time[authors[0]]+1)
+                    network['2136372366'][authors[0]].append(weight)
+                # elif (last_time[authors[0]] - time + 1) / (last_time[authors[0]] - first_time[authors[0]] + 1) > \
+                #                                         network['2136372366'][authors[0]]:
+                #     network['2136372366'][authors[0]] = (last_time[authors[0]] - time + 1) / (
+                #                                             last_time[authors[0]] - first_time[authors[0]] + 1)
+                # add_networks(network, '2136372366', authors[0],
+                #             (last_time[authors[0]] - time + 1) / (last_time[authors[0]] - first_time[authors[0]] + 1))
 
 with codecs.open('D:/WBL/networkContinue/scrap/tests/bigger_all.csv', 'r', encoding='utf-8') as f:
-    for authors in one_hop:
+    f_csv = csv.reader(f)
+    for row in f_csv:
+        authors = row[2].split(',')
+        time = float(row[4].split('-')[0])
+        if authors[0] in one_hop:
+            for author in authors[1:]:
+                if author in one_hop and first_time[author] < first_time[authors[0]]:
+                    if author not in network or authors[0] not in network[author]:
+                        add_networks(network, author, authors[0],
+                                     [(last_time[authors[0]] - time + 1) / (
+                                     last_time[authors[0]] - first_time[authors[0]] + 1)])
+                    else:
+                        weight = (last_time[authors[0]]-time+1)/(last_time[authors[0]]-first_time[authors[0]]+1)
+                        network[author][authors[0]].append(weight)
+                    # elif (last_time[authors[0]] - time + 1) / (last_time[authors[0]] - first_time[authors[0]] + 1) > \
+                    #         network[author][authors[0]]:
+                    #     network[author][authors[0]] = (last_time[authors[0]] - time + 1) / (
+                    #         last_time[authors[0]] - first_time[authors[0]] + 1)
 
+                    # add_networks(network, author, authors[0], (last_time[authors[0]]-time+1)/(last_time[authors[0]]-first_time[authors[0]]+1))
+for author1 in network:
+    for author2 in network[author1]:
+        network[author1][author2] = sum(network[author1][author2])/float(len(network[author1][author2]))
 
-
-
-
-# for author1 in network:
-#     for author2 in network[author1]:
-#         network[author1][author2] = float(network[author1][author2])/float(ppa[author2])
-fr = open('./network_dict_0802_time_weight.json', 'w', encoding='utf-8')
+fr = open('./network_dict_0803_one_hop_strict_time_avg_weight.json', 'w', encoding='utf-8')
 json.dump(network, fr, ensure_ascii='false')
 
 # frname = open('./inter_res/paper_per_author.json', 'w', encoding='utf-8')

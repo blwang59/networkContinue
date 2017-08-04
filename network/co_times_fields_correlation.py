@@ -41,15 +41,15 @@ fr = open('./inter_res/codatas.json', 'w', encoding='utf-8', errors='ignore')
 json.dump(network, fr, ensure_ascii='false')
 
 
-# network = json.load(open('./inter_res/codatas.json'))
-#
-# d = []
-# for author1 in network:
-#     for author2 in network[author1]:
-#         d.append(network[author1][author2])
-#
-#
-# plt.xlabel('cooperate times')
-# plt.ylabel('number of same field of study')
-# plt.scatter(*zip(*d), marker='.')
-# plt.show()
+network = json.load(open('./inter_res/codatas.json'))
+
+d = []
+for author1 in network:
+    for author2 in network[author1]:
+        d.append(network[author1][author2])
+
+
+plt.xlabel('cooperate times')
+plt.ylabel('number of same field of study')
+plt.scatter(*zip(*d), marker='.')
+plt.show()

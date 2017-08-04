@@ -4,7 +4,7 @@ import random
 import codecs
 
 
-network = json.load(open('./network_dict_0803_one_hop_strict_time_avg_weight.json', encoding='utf-8', errors='ignore'))
+network = json.load(open('./network_dict_0804_one_hop_right_weight.json', encoding='utf-8', errors='ignore'))
 
 
 def ICmodel(net, seeds, times):
@@ -49,7 +49,7 @@ def draw_trees(docsource, docdes):
     fr.write('strict digraph G{\n')
     names = json.load(open('./inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
     for edge in edge_count:
-        if edge_count[edge] >= 2:
+        if edge_count[edge] >= 10:
             fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
                      '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
 
@@ -58,4 +58,4 @@ def draw_trees(docsource, docdes):
 
 ICmodel(network, "2136372366", 100)
 
-draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_2_one_hop_avg_weight.dot')
+draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_10_one_hop_right_weight.dot')

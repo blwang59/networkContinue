@@ -10,8 +10,8 @@ def draw_trees(docsource, docdes):
     fr.write('strict digraph G{\n')
     for a1 in net:
         for a2 in net[a1]:
-            if a1 == '2098414524' or a2 == '2291800725':
-                fr.write('"' + names[a1] +'" -> "' + names[a2] + '"' + '[label = '+str(round((net[a1][a2]),2))+']'+'\n')
+            if a2 == '2110384818' or a1 == '2110384818':
+                fr.write('"' + names[a1] +'" -> "' + names[a2] + '"' + '[label = '+str(round((net[a1][a2]), 2))+']'+'\n')
 
     fr.write('}')
     fr.close()
@@ -30,4 +30,4 @@ def draw_trees(docsource, docdes):
     #     if edge_count[edge] >= 2:
     #         fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
     #                  '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
-draw_trees('./network_dict_0804_one_hop_right_weight.json', './network_dict_0804_one_hop_x.dot')
+draw_trees('./network_dict_0807_right_weight.json', './test_0807.dot')

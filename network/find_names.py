@@ -21,12 +21,14 @@ import codecs
             
 
 per_name = {}
-with codecs.open('D:/WBL/networkContinue/scrap/tests/all.csv', 'r', encoding='utf-8', errors='ignore') as f:
+with codecs.open('D:/WBL/networkContinue/scrap/tests/all_0804.csv', 'r', encoding='utf-8', errors='ignore') as f:
     f_csv = csv.reader(f)
     for row in f_csv:
         nums = row[2].split(',')
         names = row[1].split(';')
         names = [n.split('(')[0] for n in names]
+        names = [a.strip() for a in names]
+
         if len(nums) <= len(names):
             for i in range(len(nums)):
                 if nums[i] not in per_name:

@@ -1,0 +1,18 @@
+strict digraph G{
+"Hui Xiong" -> "Yanjie Fu"[label = 0.03]
+"Zhi-Hua Zhou" -> "Yanjie Fu"[label = 0.03]
+"Hengshu Zhu" -> "Yanjie Fu"[label = 0.03]
+"Yong Ge" -> "Yanjie Fu"[label = 0.03]
+"Junming Liu" -> "Yanjie Fu"[label = 0.09]
+"Yanjie Fu" -> "Zijun Yao"[label = 0.05]
+"Yanjie Fu" -> "Junming Liu"[label = 0.08]
+"Yanjie Fu" -> "Guannan Liu"[label = 0.04]
+"Yanjie Fu" -> "Liang Wu"[label = 0.03]
+"Yanjie Fu" -> "Bin Liu"[label = 0.03]
+"Yanchi Liu" -> "Yanjie Fu"[label = 0.05]
+"Yu Zheng" -> "Yanjie Fu"[label = 0.04]
+"Zijun Yao" -> "Yanjie Fu"[label = 0.03]
+"Jing Yuan" -> "Yanjie Fu"[label = 0.04]
+"Guannan Liu" -> "Yanjie Fu"[label = 0.03]
+"Chen Zhu" -> "Yanjie Fu"[label = 0.03]
+}

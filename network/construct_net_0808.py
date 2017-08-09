@@ -29,6 +29,12 @@ with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors
         else:
             if time < first_time[authors[0]]:
                 first_time[authors[0]] = time
+        for a in authors:
+            if a == '2136372366':#chenenhong
+                if '2136372366' not in first_time:
+                    first_time['2136372366'] = time
+                elif time < first_time['2136372366']:
+                    first_time['2136372366'] = time
 
             # if a not in last_time:
             #     2017.0 = time
@@ -42,7 +48,7 @@ with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors
 # print('Guannan Liu:'+str(first_time['2273869953']))
 
 
-with codecs.open('D:/WBL/networkContinue/scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors='ignore') as f:
+with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors='ignore') as f:
    f_csv = csv.reader(f)
    for row in f_csv:
        authors = row[2].split(',')

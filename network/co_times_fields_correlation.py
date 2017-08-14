@@ -7,7 +7,7 @@ import numpy as np
 
 network = json.load(open('./inter_res/network_dict_cotimes.json', encoding='utf-8', errors='ignore'))
 author_study_field = {}
-with codecs.open('D:/WBL/networkContinue/scrap/tests/bigger_all.csv', 'r', encoding='utf-8', errors='ignore') as f:
+with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors='ignore') as f:
     f_csv = csv.reader(f)
     for row in f_csv:
         authors = row[2].split(',')

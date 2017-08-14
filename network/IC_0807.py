@@ -72,4 +72,4 @@ def draw_trees(docsource, docdes):
 
 ICmodel(network, "2136372366", 10000)
 
-draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/IC0808/chenehong_10_included.dot')
+draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/IC0814/chenenhong_10.dot')

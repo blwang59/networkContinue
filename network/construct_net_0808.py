@@ -16,6 +16,7 @@ first_time = {}
 # last_time = {}
 union_ab = {}
 time_per_paper={}
+
 # only construct v from elder node to yonger node
 with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors='ignore') as f:
     f_csv = csv.reader(f)
@@ -35,7 +36,13 @@ with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors
                     first_time['2136372366'] = time
                 elif time < first_time['2136372366']:
                     first_time['2136372366'] = time
+    fr = open('./first_time_0809_first_site_first_time_with_cheneh.json', 'w', encoding='utf-8',
+              errors='ignore')
+    json.dump(first_time, fr, ensure_ascii='false')
 
+    fr2 = open('./time_per_paper_0809_first_site_first_time_with_cheneh.json', 'w', encoding='utf-8',
+              errors='ignore')
+    json.dump(time_per_paper, fr2, ensure_ascii='false')
             # if a not in last_time:
             #     2017.0 = time
             # else:
@@ -54,12 +61,14 @@ with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors
        authors = row[2].split(',')
        time = float(row[4].split('-')[0])
 
+
        for a in authors:
            if a not in ppa:
                ppa[a] = set(row[0].split())
            else:
                # weight = (2017.0 - time + 1) / (2017.0 - first_time[a] + 1)
                ppa[a].add(row[0])
+
 
        if len(authors) > 1:
            for author1 in authors[1:]:
@@ -78,14 +87,15 @@ with codecs.open('../scrap/tests/all0808_new.csv', 'r', encoding='utf-8', errors
 
 
 
-               if author1 in first_time and author2 in first_time\
-                              and first_time[author1] <= first_time[author2]:
+               if author1 in first_time and author2 in first_time and first_time[author1] <= first_time[author2]:
                    if author1 not in network or author2 not in network[author1]:
                        add_networks(network, author1, author2, [float(2017.0-time+1)/(2017.0-first_time[author2]+1)])
                    else:
                        weight = float(2017.0-time+1)/(2017.0-first_time[author2]+1)
                        network[author1][author2].append(weight)
-
+   # fr = open('./ppa_dict_0809_first_site_first_time_with_cheneh.json', 'w', encoding='utf-8',
+   #           errors='ignore')
+   # json.dump(ppa, fr, ensure_ascii='false')
 
 
                         # elif (2017.0-time+1)/(2017.0-first_time[author2]+1) > network[author1][author2]:

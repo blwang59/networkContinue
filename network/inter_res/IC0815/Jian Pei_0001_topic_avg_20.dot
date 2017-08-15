@@ -1,0 +1,3 @@
+strict digraph G{
+"Jian Pei" -> "Sze Man Yuen"[label = 0.62]
+}

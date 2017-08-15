@@ -1,0 +1,11 @@
+strict digraph G{
+"Jian Pei" -> "Mingdong Ou"
+"Jian Pei" -> "Bin Zhou"
+"Jian Pei" -> "Ying Zhang"
+"Ying Zhang" -> "Liming Zhan"
+"Ying Zhang" -> "Xiaoyang Wang"
+"Ying Zhang" -> "Weiren Yu"
+"Ying Zhang" -> "Wenjie Zhang"
+"Ying Zhang" -> "Chengyuan Zhang"
+"Ying Zhang" -> "Fan Zhang"
+}

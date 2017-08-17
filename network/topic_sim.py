@@ -13,7 +13,7 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 def similarity(article,author):
     dictionary = corpora.Dictionary.load('./topic_model/papers'+str(author)+'.dict')
     # corpus = corpora.MmCorpus('topic_model/papers.mm')
-    lsi = models.LsiModel.load('./topic_model/model.lsi')
+    lsi = models.LsiModel.load('./topic_model/model'+str(author)+'.lsi')
     index = similarities.MatrixSimilarity.load('./topic_model/papers'+str(author)+'.index')
 
     query_bow = dictionary.doc2bow(article.lower().split())

@@ -8,6 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem.lancaster import LancasterStemmer
 import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
+import numpy
 
 from gensim import corpora,models,similarities
 import pprint
@@ -179,6 +180,7 @@ def get_topic(author):
 
     index.save('./topic_model/papers'+str(author)+'.index')
     ###################################
+
 
 get_topic('2136372366')#Enhong Chen
 get_topic('2153710278')# Hui Xiong

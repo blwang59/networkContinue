@@ -2,19 +2,22 @@
 import json
 import random
 import codecs
+import pickle
 
+# network = json.load(open('./network_dict_0804_one_hop_right_weight.json', encoding='utf-8', errors='ignore'))
 
-network = json.load(open('./network_dict_0804_one_hop_right_weight.json', encoding='utf-8', errors='ignore'))
+network = json.load(open('./relationship/results/network_dict_chenenehong_2016_2017.json', encoding='utf-8', errors='ignore'))
 
 
 def ICmodel(net, seeds, times):
-    fr = open('./inter_res/ICres_' + seeds + '.txt', 'w', encoding='utf-8', errors='ignore')
+    fr = open('./relationship/inter_res/ICres_3.txt', 'w', encoding='utf-8', errors='ignore')
     for i in range(times):
         target = []
         active = []
+        for seed in seeds:
 
-        target.append(seeds)
-        active.append(seeds)
+            target.append(seed)
+            active.append(seed)
 
         while(target):
 
@@ -36,6 +39,9 @@ def draw_trees(docsource, docdes):
 
     edge_count = {}
 
+    result_set = set()
+    # result_set.add('2136372366')
+
     with codecs.open(docsource, 'r', encoding='utf-8', errors='ignore') as f:
         for line in f:
             l = line.rstrip().split('->', 1)
@@ -52,10 +58,23 @@ def draw_trees(docsource, docdes):
         if edge_count[edge] >= 10:
             fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
                      '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
+            result_set.add(edge.split('->')[1].strip().strip('"'))
 
     fr.write('}')
     fr.close()
+    fn = './relationship/inter_res/result_set16_17.pkl'
+    pickle.dump(result_set, open(fn, 'wb'))
 
-ICmodel(network, "2136372366", 100)
+    # with open(fn, 'w') as f:  # open file with write-mode
 
-draw_trees('./inter_res/ICres_2136372366.txt', './inter_res/chenenhong_10_one_hop_right_weight.dot')
+        # f.write(picklestring)# serialize and save object
+    # pickle.dump(result_set,'./relationship/inter_res/result_set06.pkl')
+
+roots = pickle.load(open('./relationship/inter_res/result_set11_15.pkl','rb'))
+
+
+ICmodel(network, roots, 10000)
+# root = set()
+# root.add('2136372366')
+# ICmodel(network,root, 10000)
+draw_trees('./relationship/inter_res/ICres_3.txt', './relationship/inter_res/chenenhong_2016_2017.dot')

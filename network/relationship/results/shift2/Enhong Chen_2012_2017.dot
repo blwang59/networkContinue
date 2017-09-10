@@ -1,0 +1,7 @@
+strict digraph G{
+"Biao Chang" -> "Zhefeng Wang"
+"Meng Qu" -> "Junming Liu"
+"Guannan Liu" -> "Yanjie Fu"
+"Chen Zhu" -> "Yanjie Fu"
+"Yanjie Fu" -> "Junming Liu"
+}

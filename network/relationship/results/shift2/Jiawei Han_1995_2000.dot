@@ -1,0 +1,5 @@
+strict digraph G{
+"Ming-Syan Chen" -> "Jong Soo Park"
+"Ming-Syan Chen" -> "Chihping Wang"
+"Ming-Syan Chen" -> "Arif Merchant"
+}

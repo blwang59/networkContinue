@@ -1,0 +1,12 @@
+strict digraph G{
+"Hui Xiong" -> "Dihua Guo"
+"Hui Xiong" -> "Junjie Wu"
+"Hui Xiong" -> "Byron J. Gao"
+"Hui Xiong" -> "Yaochun Huang"
+"Hui Xiong" -> "Yinglung Liang"
+"Hui Xiong" -> "Michael Steinbach"
+"Hui Xiong" -> "Jieping Ye"
+"Hui Xiong" -> "Yan Huang"
+"Hui Xiong" -> "Tieyun Qian"
+"Hui Xiong" -> "Jinmei Xu"
+}

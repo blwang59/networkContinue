@@ -3,6 +3,7 @@ import json
 import random
 import codecs
 import pickle
+import os
 
 
 def ICmodel(net, seeds, times):
@@ -76,7 +77,7 @@ def draw_trees(docdes,author,time1,time2):
 #     # ICmodel(network,root, 10000)
 #     draw_trees('/inter_res/ICres_'+author+'.txt', '/inter_res/'+author+'_'+result_time+'.dot')
 
-def draw_final(net, roots, author, time1,time2):
+def draw_final(net, roots, author, time1,time2 , shift):
     '''
 
     :param net: the network which the influence model based on
@@ -89,4 +90,9 @@ def draw_final(net, roots, author, time1,time2):
 
     ICmodel(net, roots, 10000)
 
-    draw_trees('./results/'+author+'_'+str(int(time1))+'_'+str(int(time2))+'.dot',author,time1,time2)
+    names = json.load(open('../inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
+    if(os.path.exists(('./results/shift'+str(shift)))):
+        pass
+    else:
+        os.mkdir('./results/shift'+str(shift))
+    draw_trees('./results/shift'+str(shift)+'/'+names[author]+'_'+str(int(time1))+'_'+str(int(time2))+'.dot',author,time1,time2)

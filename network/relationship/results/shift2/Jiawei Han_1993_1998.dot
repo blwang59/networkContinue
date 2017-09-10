@@ -1,0 +1,5 @@
+strict digraph G{
+"Jiawei Han" -> "Ming-Syan Chen"
+"Jiawei Han" -> "Osmar R. Zaïane"
+"Jiawei Han" -> "Micheline Kamber"
+}

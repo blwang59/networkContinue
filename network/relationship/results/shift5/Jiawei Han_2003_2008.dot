@@ -1,0 +1,8 @@
+strict digraph G{
+"Simeon J Simoff" -> "Brendan Kitts"
+"Brij M. Masand" -> "Olfa Nasraoui"
+"Simeon J Simoff" -> "Paul J. Kennedy"
+"Simeon J Simoff" -> "Ting Yu"
+"Chang-Hung Lee" -> "Jian Chih Ou"
+"Maria-Luiza Antonie" -> "Rafal Rak"
+}

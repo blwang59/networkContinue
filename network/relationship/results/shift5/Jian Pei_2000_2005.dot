@@ -1,0 +1,10 @@
+strict digraph G{
+"Jian Pei" -> "Helen Pinto"
+"Jian Pei" -> "Wenmin Li"
+"Jian Pei" -> "Chen Wang"
+"Jian Pei" -> "Lin Deng"
+"Jian Pei" -> "Daxin Jiang"
+"Jian Pei" -> "Chun Tang"
+"Jian Pei" -> "Jianyong Wang"
+"Chun Tang" -> "Daxin Jiang"
+}

@@ -91,8 +91,8 @@ def draw_final(net, roots, author, time1,time2 , shift):
     ICmodel(net, roots, 10000)
 
     names = json.load(open('../inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
-    if(os.path.exists(('./results/shift'+str(shift)))):
+    if(os.path.exists(('./results/include_seeds/shift'+str(shift)))):
         pass
     else:
-        os.mkdir('./results/shift'+str(shift))
-    draw_trees('./results/shift'+str(shift)+'/'+names[author]+'_'+str(int(time1))+'_'+str(int(time2))+'.dot',author,time1,time2)
+        os.mkdir('./results/include_seeds/shift'+str(shift))
+    draw_trees('./results/include_seeds/shift'+str(shift)+'/'+names[author]+'_'+str(int(time1))+'_'+str(int(time2))+'.dot',author,time1,time2)

@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Sep 7th 10:27:37 2017
+Created on Tue Sep 12th 13:07:37 2017
 
 @author: wangbl
-Purpose: time slice experiment on Enhong Chen, whose paper is from 2006.
-slice into three parts:2006-2010,2011-2015,2016-2017
+Purpose: time slice experiment on authors.Compared with time_slice.py, this one include the seeds.
 
 
 """
@@ -26,29 +25,9 @@ def network_construct(author,step,shift):
 
     :param author: number of author
     :param step: length of time slices
-    :param overlap: how much overlap between slices 
+    :param shift: time(years) between two slices' first year.
     :return: none, generate final file './results/number_time1_time2.dot'
     '''
-    # first_time = json.load(open('../first_time_0809_first_site_first_time_with_cheneh.json'))
-    #
-    # root= set()
-    # root.add(author)
-    # diffusion(root,author,first_time[author],first_time[author]+step)
-    # network = json.load(open('./results/network_dict_' + author + '_' + str(int(first_time[author]) ) + '_' + str(int(first_time[author]+ step)) + '.json'))
-    # IC.draw_final(network, root, author, first_time[author] , first_time[author] + step)
-    #
-    #
-    # for i in range(int((2017-first_time[author])/step)):
-    #     roots = pickle.load(open(
-    #         './inter_res/result_set_' + author + '_' + str(int(first_time[author] + i * step)) + '_' +
-    #         str(int(first_time[author] + (i + 1) * step)) + '.pkl', 'rb'))
-    #     diffusion(roots,author,first_time[author]+(i+1)*step,first_time[author]+(i+2)*step)
-    #     network = json.load(
-    #         open('./results/network_dict_' + author + '_' + str(int(first_time[author] + (i + 1) * step)) + '_' + str(
-    #             int(first_time[author] + (i + 2) * step)) + '.json', encoding='utf-8', errors='ignore'))
-    #
-    #     IC.draw_final(network, roots, author, first_time[author] + (i + 1) * step, first_time[author] + (i + 2) * step)
-
 
     first_time = json.load(open('../first_time_0809_first_site_first_time_with_cheneh.json'))
     ftime =first_time[author]
@@ -59,14 +38,16 @@ def network_construct(author,step,shift):
     network = json.load(open('./inter_res/network_dict/network_dict_' + author + '_' + str(int(ftime))  + '_' + str(int(ftime + step)) + '.json'))
     IC.draw_final(network, root, author, ftime, ftime + step,shift)
 
-    for i in range(int((2017-ftime-step)/shift)):
+    for i in range(int((2017-ftime-step)/shift)+1):
         roots = pickle.load(open(
             './inter_res/result_set_' + author + '_' + str(int(ftime + i*shift)) + '_' +str(int(ftime + i*shift + step)) + '.pkl', 'rb'))
-        diffusion(roots, author, ftime + (i+1) * shift, ftime + (i+1)*shift + step)
+
+        root = root | roots
+        diffusion(root, author, ftime + (i+1) * shift, ftime + (i+1)*shift + step)
         network = json.load(open(
             './inter_res/network_dict/network_dict_' + author + '_' + str(int( ftime + (i+1) * shift)) + '_' + str(int(ftime + (i+1)*shift + step)) + '.json', encoding='utf-8', errors='ignore'))
 
-        IC.draw_final(network, roots, author,  ftime + (i+1) * shift, ftime + (i+1)*shift + step,shift)
+        IC.draw_final(network, root, author,  ftime + (i+1) * shift, ftime + (i+1)*shift + step,shift)
 
 
 
@@ -125,4 +106,4 @@ def diffusion(roots,author,time1,time2):
               errors='ignore')
     json.dump(network, fr, ensure_ascii='false')
 
-network_construct('2121939561', 5, 2)
+network_construct('2126330539', 5, 2)

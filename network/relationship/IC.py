@@ -4,7 +4,7 @@ import random
 import codecs
 import pickle
 import os
-
+import networkx as nx
 
 def ICmodel(net, seeds, times):
     fr = open('./inter_res/ICres.txt', 'w', encoding='utf-8', errors='ignore')
@@ -33,7 +33,7 @@ def ICmodel(net, seeds, times):
 
 
 def draw_trees(docdes,author,time1,time2):
-
+    G=nx.DiGraph()
     edge_count = {}
     result_set = set()
     with codecs.open('./inter_res/ICres.txt', 'r', encoding='utf-8', errors='ignore') as f:
@@ -42,6 +42,7 @@ def draw_trees(docdes,author,time1,time2):
             if len(l) > 1:
                 if '"' + l[0] + '" -> "' + l[1] + '"' not in edge_count:
                     edge_count['"' + l[0] + '" -> "' + l[1] + '"'] = 1
+
                 else:
                     edge_count['"' + l[0] + '" -> "' + l[1] + '"'] += 1
 
@@ -52,6 +53,8 @@ def draw_trees(docdes,author,time1,time2):
         if edge_count[edge] >= 10:
             fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
                      '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
+
+
             result_set.add(edge.split('->')[1].strip().strip('"'))
 
     fr.write('}')

@@ -1,9 +1,0 @@
-strict digraph G{
-"Enhong Chen" -> "Huanhuan Cao"
-"Enhong Chen" -> "Tengfei Bao"
-"Huanhuan Cao" -> "Tengfei Bao"
-"Enhong Chen" -> "Xiaojun Quan"
-"Enhong Chen" -> "Tieyun Qian"
-"Enhong Chen" -> "Biao Xiang"
-"Enhong Chen" -> "Qi Liu"
-}

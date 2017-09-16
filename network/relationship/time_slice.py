@@ -15,6 +15,7 @@ import json
 import pickle
 import IC
 
+
 def add_networks(dic1, key_a, key_b, val):
     if key_a in dic1:
         dic1[key_a].update({key_b: val})
@@ -29,25 +30,6 @@ def network_construct(author,step,shift):
     :param overlap: how much overlap between slices 
     :return: none, generate final file './results/number_time1_time2.dot'
     '''
-    # first_time = json.load(open('../first_time_0809_first_site_first_time_with_cheneh.json'))
-    #
-    # root= set()
-    # root.add(author)
-    # diffusion(root,author,first_time[author],first_time[author]+step)
-    # network = json.load(open('./results/network_dict_' + author + '_' + str(int(first_time[author]) ) + '_' + str(int(first_time[author]+ step)) + '.json'))
-    # IC.draw_final(network, root, author, first_time[author] , first_time[author] + step)
-    #
-    #
-    # for i in range(int((2017-first_time[author])/step)):
-    #     roots = pickle.load(open(
-    #         './inter_res/result_set_' + author + '_' + str(int(first_time[author] + i * step)) + '_' +
-    #         str(int(first_time[author] + (i + 1) * step)) + '.pkl', 'rb'))
-    #     diffusion(roots,author,first_time[author]+(i+1)*step,first_time[author]+(i+2)*step)
-    #     network = json.load(
-    #         open('./results/network_dict_' + author + '_' + str(int(first_time[author] + (i + 1) * step)) + '_' + str(
-    #             int(first_time[author] + (i + 2) * step)) + '.json', encoding='utf-8', errors='ignore'))
-    #
-    #     IC.draw_final(network, roots, author, first_time[author] + (i + 1) * step, first_time[author] + (i + 2) * step)
 
 
     first_time = json.load(open('../first_time_0809_first_site_first_time_with_cheneh.json'))
@@ -73,6 +55,7 @@ def network_construct(author,step,shift):
 
 
 def diffusion(roots,author,time1,time2):
+
     ppa = {}
     union_ab = {}
     network = {}
@@ -104,6 +87,7 @@ def diffusion(roots,author,time1,time2):
                                             weight = float(2017.0 - time + 1) / (2017.0 - first_time[author1] + 1)
                                         if author1 not in union_ab or author2 not in union_ab[author1]:
                                             add_networks(union_ab, author1, author2, [weight])
+
                                         else:
                                             union_ab[author1][author2].append(weight)
 
@@ -125,4 +109,4 @@ def diffusion(roots,author,time1,time2):
               errors='ignore')
     json.dump(network, fr, ensure_ascii='false')
 
-network_construct('2126330539', 5, 3)
+network_construct('2136372366', 1, 1)

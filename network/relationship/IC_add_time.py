@@ -40,7 +40,7 @@ def ICmodel(net, seeds, times, year1,year2):
     fr.close()
 
 
-def draw_trees(author,time1,time2):
+def draw_trees(author,time1,time2,docdes):
     '''
 
     :param docdes: where to store the doc
@@ -60,7 +60,7 @@ def draw_trees(author,time1,time2):
                 else:
                     edge_count['"' + l[0] + '" -> "' + l[1] + '"'] += 1
 
-    # fr = open(docdes, 'w', encoding='utf-8')
+    fr = open(docdes, 'w', encoding='utf-8')
     # fr.write('strict digraph G{\n')
     names = json.load(open('../inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
     for edge in edge_count:
@@ -71,6 +71,10 @@ def draw_trees(author,time1,time2):
 
                        year = network[edge.split('->')[0].strip().strip('"')][edge.split('->')[1].strip().strip('"')]['year'])
 
+            fr.write('"' + names[edge.split('->')[0].strip().strip('"')] +
+                     '" -> "' + names[edge.split('->')[1].strip().strip('"')] + '"' + '\n')
+
+
 
             result_set.add(edge.split('->')[1].strip().strip('"'))
 
@@ -78,7 +82,7 @@ def draw_trees(author,time1,time2):
     fn = './inter_res/netx/net_' + author + '_' + str(int(time1)) + '_' + str(int(time2)) + '.pkl'
     pickle.dump(G, open(fn, 'wb'))
     # fr.write('}')
-    # fr.close()
+    fr.close()
     return result_set
 
 
@@ -94,12 +98,17 @@ def draw_final(net, author, step, shift):
     :return: none
     '''
     first_time = json.load(open('../first_time_0809_first_site_first_time_with_cheneh.json'))
+    names = json.load(open('../inter_res/name_per_author.json'))
     time1 =first_time[author]
     roots = set()
     roots.add(author)
     ICmodel(net,roots,10000,time1,time1+step)
+    if (os.path.exists(('./inter_res/merge_net/shift' + str(shift)))):
+        pass
+    else:
+        os.mkdir('./inter_res/merge_net/shift' + str(shift))
     for i in range(int((2017-time1-step)/shift)+1):
-        roots = draw_trees(author,time1+ (i) * shift, time1 + (i)*shift + step)
+        roots = draw_trees(author,time1+ (i) * shift, time1 + (i)*shift + step,'./inter_res/merge_net/shift'+str(shift)+'/'+names[author]+'_'+str(int(time1+ (i) * shift))+'_'+str(int(time1 + (i)*shift + step))+'.dot')
         ICmodel(net,roots,10000,time1+ (i+1) * shift, time1 + (i+1)*shift + step)
 
 draw_final(network,'2136372366',5,2)

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396badcf-d83f-4d12-b39c-d9dec29f34bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/chenenhong.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/chenenhong.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png" afterPath="$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/IC_add_time.py" afterPath="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" afterPath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/slice_merge.py" afterPath="$PROJECT_DIR$/network/relationship/slice_merge.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,10 +29,50 @@
       <file leaf-file-name="slice_merge.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/slice_merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="748">
+              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
               <folding>
                 <element signature="e#175#188#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xionghui_shift2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/results/xionghui_shift2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hanjiawei_shift2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/results/hanjiawei_shift2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="peijian_shift2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/results/peijian_shift2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chenenhong_shift2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="networkx_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+              <folding>
+                <element signature="e#785#816#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,8 +81,8 @@
       <file leaf-file-name="find_substructure.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="616">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#143#156#0" expanded="true" />
               </folding>
@@ -51,42 +93,8 @@
       <file leaf-file-name="常用名字.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kdd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrap/kdd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-              <folding>
-                <element signature="e#171#184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="draw_nets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/draw_nets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="44">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -95,18 +103,8 @@
       <file leaf-file-name="IC_add_time.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IC.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/IC.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-267">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="1386">
+              <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -123,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{</find>
       <find>author1</find>
       <find>2398039300</find>
       <find>bigger_all</find>
@@ -153,6 +150,7 @@
       <find>dir_path</find>
       <find>netx/</find>
       <find>pkl</find>
+      <find>G</find>
     </findStrings>
     <replaceStrings>
       <replace>time</replace>
@@ -222,17 +220,17 @@
         <option value="$PROJECT_DIR$/network/relationship/construct_net_with_year.py" />
         <option value="$PROJECT_DIR$/network/relationship/IC.py" />
         <option value="$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py" />
+        <option value="$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py" />
         <option value="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
         <option value="$PROJECT_DIR$/network/relationship/slice_merge.py" />
         <option value="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="99" />
-    <option name="width" value="1382" />
-    <option name="height" value="812" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -249,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -286,17 +285,23 @@
             <path>
               <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
               <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
               <item name="scrap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/2017-2018YI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
@@ -311,7 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.find_substructure">
+  <component name="RunManager" selected="Python.IC_add_time">
     <configuration name="IC_add_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -398,23 +403,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration name="draw_nets" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="networkContinue" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/draw_nets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="find_substructure" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,6 +437,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="networkx_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network/relationship/inter_res/netx" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="networkContinue" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="slice_merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -469,17 +474,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.slice_merge" />
       <item index="1" class="java.lang.String" itemvalue="Python.IC_add_time" />
-      <item index="2" class="java.lang.String" itemvalue="Python.draw_nets" />
-      <item index="3" class="java.lang.String" itemvalue="Python.merge" />
-      <item index="4" class="java.lang.String" itemvalue="Python.find_substructure" />
+      <item index="2" class="java.lang.String" itemvalue="Python.merge" />
+      <item index="3" class="java.lang.String" itemvalue="Python.find_substructure" />
+      <item index="4" class="java.lang.String" itemvalue="Python.networkx_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.find_substructure" />
-        <item index="1" class="java.lang.String" itemvalue="Python.slice_merge" />
-        <item index="2" class="java.lang.String" itemvalue="Python.IC_add_time" />
-        <item index="3" class="java.lang.String" itemvalue="Python.merge" />
-        <item index="4" class="java.lang.String" itemvalue="Python.draw_nets" />
+        <item index="0" class="java.lang.String" itemvalue="Python.IC_add_time" />
+        <item index="1" class="java.lang.String" itemvalue="Python.find_substructure" />
+        <item index="2" class="java.lang.String" itemvalue="Python.networkx_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.slice_merge" />
+        <item index="4" class="java.lang.String" itemvalue="Python.merge" />
       </list>
     </recent_temporary>
   </component>
@@ -509,19 +514,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4310722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32100108" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5229211" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28400436" sideWeight="0.47707888" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4319913" sideWeight="0.4749467" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828074" sideWeight="0.47707888" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.4749467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34494016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4074074" sideWeight="0.65208334" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -605,41 +609,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="297" column="0" lean-forward="false" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2010_2015.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Enhong Chen_2012_2017.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-669">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Enhong Chen_2014_2019.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2014_2019.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -857,21 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-          <folding>
-            <element signature="e#171#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/draw_nets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,13 +837,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrap/kis.csv">
@@ -906,9 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2618">
           <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,48 +865,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/IC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
+        <state relative-caret-position="1100">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/edges.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="1012">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding>
+            <element signature="e#785#816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/slice_merge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="748">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
             <element signature="e#175#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/hanjiawei_shift2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/peijian_shift2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/xionghui_shift2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="616">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
           </folding>

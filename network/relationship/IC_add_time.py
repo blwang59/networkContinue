@@ -104,7 +104,7 @@ def draw_final(net, author, step, shift):
         roots = draw_trees(author,time1+ (i) * shift, time1 + (i)*shift + step)
         ICmodel(net,roots,10000,time1+ (i+1) * shift, time1 + (i+1)*shift + step)
 
-draw_final(network,'2153710278',5,2)
+draw_final(network,'2121939561',5,2)
 
 
 

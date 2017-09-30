@@ -10,12 +10,16 @@ Purpose: find the different substructure in the graph
 import pickle
 import networkx as nx
 
-graph = pickle.load(open('chenenhong.pkl','rb'))
+def printres(author_name):
 
-print(graph)
+    graph = pickle.load(open(author_name+'.pkl','rb'))
 
-print(nx.triadic_census(graph).values())
-print(nx.triangles(graph))
+    # print(graph)
+    print(author_name+'\n')
+
+    print(nx.triadic_census(graph))
+printres('hanjiawei')
+
 #    tg = {name: abc_graph() for name in TRIAD_NAMES}
 #     tg['012'].add_edges_from([('a', 'b')])
 #     tg['102'].add_edges_from([('a', 'b'), ('b', 'a')])

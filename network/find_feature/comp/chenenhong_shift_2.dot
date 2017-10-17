@@ -1,0 +1,37 @@
+strict digraph G{
+"Enhong Chen" -> "Tieyun Qian"
+"Enhong Chen" -> "Tengfei Bao"
+"Enhong Chen" -> "Biao Xiang"
+"Enhong Chen" -> "Qi Liu"
+"Enhong Chen" -> "Xiaojun Quan"
+"Enhong Chen" -> "Huanhuan Cao"
+"Huanhuan Cao" -> "Hengshu Zhu"
+"Tengfei Bao" -> "Le Wu"
+"Huanhuan Cao" -> "Haiping Ma"
+"Qi Liu" -> "Yu Yang"[color = red]
+"Xiaojun Quan" -> "Xingliang Ni"
+"Huanhuan Cao" -> "Zhen Liao"[color = red]
+"Zhen Liao" -> "Dongyeop Kang"[color = red]
+"Huanhuan Cao" -> "Tong Xu"
+"Tong Xu" -> "Yu Yang"
+"Huanhuan Cao" -> "Xueying Li"[color = red]
+"Biao Xiang" -> "Yu Yang"
+"Qi Liu" -> "Le Wu"[color = red]
+"Hengshu Zhu" -> "Baoxing Huai"[color = red]
+"Le Wu" -> "Hongke Zhao"
+"Hengshu Zhu" -> "Biao Chang"
+"Hengshu Zhu" -> "Bo Jin"
+"Tong Xu" -> "Guannan Liu"
+"Hengshu Zhu" -> "Meng Qu"[color = red]
+"Hengshu Zhu" -> "Chen Zhu"
+"Guannan Liu" -> "Meng Qu"[color = red]
+"Meng Qu" -> "Junming Liu"[color = red]
+"Biao Chang" -> "Zhefeng Wang"
+"Guannan Liu" -> "Yanjie Fu"[color = red]
+"Chen Zhu" -> "Yanjie Fu"
+"Yanjie Fu" -> "Zijun Yao"[color = red]
+"Yanjie Fu" -> "Junming Liu"[color = red]
+"Yanjie Fu" -> "Bin Liu"[color = red]
+"Zhefeng Wang" -> "Lingyang Chu"
+"Yanjie Fu" -> "Liang Wu"[color = red]
+}

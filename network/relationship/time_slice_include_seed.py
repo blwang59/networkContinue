@@ -14,6 +14,7 @@ import json
 import pickle
 import IC
 
+
 def add_networks(dic1, key_a, key_b, val):
     if key_a in dic1:
         dic1[key_a].update({key_b: val})
@@ -99,11 +100,12 @@ def diffusion(roots,author,time1,time2):
 
 
     for author1 in network:
-        for author2 in network[author1]:
+        for author2 \
+                in network[author1]:
             network[author1][author2] = sum(network[author1][author2]) / sum(union_ab[author1][author2])
 
     fr = open('./inter_res/network_dict/network_dict_'+author+'_'+str(int(time1))+'_'+str(int(time2))+'.json', 'w', encoding='utf-8',
               errors='ignore')
     json.dump(network, fr, ensure_ascii='false')
 
-network_construct('2126330539', 5, 2)
+network_construct('2136372366', 5, 2)

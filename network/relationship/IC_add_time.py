@@ -12,6 +12,9 @@ import codecs
 import pickle
 import os
 import networkx as nx
+from pycallgraph import PyCallGraph
+from pycallgraph import Config
+from pycallgraph.output import GraphvizOutput
 network = pickle.load(open('./inter_res/nx.pkl', 'rb'))
 
 def ICmodel(net, seeds, times, year1,year2):
@@ -104,7 +107,16 @@ def draw_final(net, author, step, shift):
         roots = draw_trees(author,time1+ (i) * shift, time1 + (i)*shift + step)
         ICmodel(net,roots,10000,time1+ (i+1) * shift, time1 + (i+1)*shift + step)
 
-draw_final(network,'2121939561',5,2)
+def main():
+    graphviz = GraphvizOutput()
+    graphviz.output_file = 'basic.png'
+
+    with PyCallGraph(output=graphviz):
+        draw_final(network, '2136372366', 5, 2)
+
+if __name__ == '__main__':
+    main()
+
 
 
 

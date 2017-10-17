@@ -1,0 +1,18 @@
+diGraph G{
+"data.csv(original data)" -> "nx.pkl"[label = "construct_net_with_year.py"]
+"nx.pkl" -> "net_2136372366_2006_2011.pkl"[label = "IC_add_time.py"]
+"nx.pkl" -> "net_2136372366_2008_2013.pkl"[label = "IC_add_time.py"]
+"nx.pkl" -> "net_2136372366_2010_2015.pkl"[label = "IC_add_time.py"]
+"nx.pkl" -> "net_2136372366_2012_2017.pkl"[label = "IC_add_time.py"]
+
+
+"net_2136372366_2006_2011.pkl" -> "chenenhong.pkl"[label = "slice_merge.py"]
+"net_2136372366_2008_2013.pkl" -> "chenenhong.pkl"[label = "slice_merge.py"]
+"net_2136372366_2010_2015.pkl" -> "chenenhong.pkl"[label = "slice_merge.py"]
+"net_2136372366_2012_2017.pkl" -> "chenenhong.pkl"[label = "slice_merge.py"]
+
+"chenenhong.pkl"->"chenenhong.pdf"
+
+
+
+}

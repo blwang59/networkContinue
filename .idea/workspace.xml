@@ -2,14 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396badcf-d83f-4d12-b39c-d9dec29f34bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/chenenhong.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/chenenhong.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png" afterPath="$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/find_feature/chenenhong.pkl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flow.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flow1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/find_feature/analyze_features.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/find_feature/chenenhong_10.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_1993_1998.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_1993_1998.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_1999_2004.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_1999_2004.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_2005_2010.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_2005_2010.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_2011_2016.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2121939561_2011_2016.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2006_2011.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2006_2011.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2008_2013.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2008_2013.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2010_2015.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2010_2015.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2012_2017.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2136372366_2012_2017.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2003_2008.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2003_2008.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2005_2010.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2005_2010.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2007_2012.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2007_2012.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2009_2014.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2009_2014.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2011_2016.pkl" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/net_2153710278_2011_2016.pkl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/networkContinue.iml" afterPath="$PROJECT_DIR$/.idea/networkContinue.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/inter_res/chenenhong_10_1631.dot" afterPath="$PROJECT_DIR$/network/inter_res/chenenhong_10_1631.dot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/IC_add_time.py" afterPath="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" afterPath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" afterPath="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/slice_merge.py" afterPath="$PROJECT_DIR$/network/relationship/slice_merge.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/time_slice_include_seed.py" afterPath="$PROJECT_DIR$/network/relationship/time_slice_include_seed.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,75 +43,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="slice_merge.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/slice_merge.py">
+      <file leaf-file-name="diff.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <element signature="e#175#188#0" expanded="true" />
+                <element signature="e#156#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xionghui_shift2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/results/xionghui_shift2.png">
+      <file leaf-file-name="chenenhong_shift_2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_shift_2.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hanjiawei_shift2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/results/hanjiawei_shift2.png">
+      <file leaf-file-name="chenenhong_10.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_10.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="peijian_shift2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/results/peijian_shift2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="chenenhong_10.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_10.dot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2310">
+              <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chenenhong_shift2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="chenenhong_10.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/chenenhong_10.dot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_features.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/analyze_features.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <element signature="e#136#147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="常用名字.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="networkx_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
+            <state relative-caret-position="588">
               <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-              <folding>
-                <element signature="e#785#816#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find_substructure.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#143#156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="常用名字.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -103,8 +124,20 @@
       <file leaf-file-name="IC_add_time.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="44">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="55" />
+              <folding>
+                <element signature="e#136#147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chenenhong_shift_2.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_shift_2.dot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -121,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>author1</find>
       <find>2398039300</find>
       <find>bigger_all</find>
       <find>last_time[a]</find>
@@ -151,6 +183,7 @@
       <find>netx/</find>
       <find>pkl</find>
       <find>G</find>
+      <find>result_set</find>
     </findStrings>
     <replaceStrings>
       <replace>time</replace>
@@ -211,26 +244,34 @@
         <option value="$PROJECT_DIR$/network/ICmodel.py" />
         <option value="$PROJECT_DIR$/network/relationship/time_slice_chen.py" />
         <option value="$PROJECT_DIR$/network/relationship/show_dots.py" />
-        <option value="$PROJECT_DIR$/network/relationship/time_slice_include_seed.py" />
         <option value="$PROJECT_DIR$/network/relationship/dynamic_influence_model.py" />
         <option value="$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2013_2014.dot" />
         <option value="$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2015_2016.dot" />
         <option value="$PROJECT_DIR$/network/relationship/time_slice.py" />
-        <option value="$PROJECT_DIR$/network/常用名字.txt" />
         <option value="$PROJECT_DIR$/network/relationship/construct_net_with_year.py" />
         <option value="$PROJECT_DIR$/network/relationship/IC.py" />
         <option value="$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py" />
         <option value="$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py" />
-        <option value="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
         <option value="$PROJECT_DIR$/network/relationship/slice_merge.py" />
         <option value="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
+        <option value="$PROJECT_DIR$/flow.dot" />
+        <option value="$PROJECT_DIR$/network/relationship/time_slice_include_seed.py" />
+        <option value="$PROJECT_DIR$/flow1" />
+        <option value="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
+        <option value="$PROJECT_DIR$/network/inter_res/chenenhong_10_1631.dot" />
+        <option value="$PROJECT_DIR$/network/find_feature/diff.py" />
+        <option value="$PROJECT_DIR$/network/find_feature/comp/chenenhong_shift_2.dot" />
+        <option value="$PROJECT_DIR$/network/find_feature/comp/chenenhong_10.dot" />
+        <option value="$PROJECT_DIR$/network/find_feature/analyze_features.py" />
+        <option value="$PROJECT_DIR$/network/常用名字.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="208" />
+    <option name="y" value="208" />
+    <option name="width" value="1582" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -247,8 +288,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,34 +306,20 @@
               <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
               <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="find_feature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="find_feature" type="462c0819:PsiDirectoryNode" />
+              <item name="comp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
               <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="inter_res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="inter_res" type="462c0819:PsiDirectoryNode" />
-              <item name="netx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
-              <item name="scrap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,7 +329,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WBL\networkContinue\network\find_feature" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.IC_add_time">
+  <component name="RunManager" selected="Python.analyze_features">
     <configuration name="IC_add_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,6 +435,40 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration name="analyze_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network/find_feature" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="networkContinue" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/find_feature/analyze_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="diff" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network/find_feature" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="networkContinue" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/find_feature/diff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="find_substructure" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,23 +482,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="networkContinue" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network/relationship/inter_res/merge_net" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="networkContinue" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/relationship/inter_res/merge_net/merge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -454,37 +503,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="slice_merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network/relationship" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="networkContinue" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/relationship/slice_merge.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.slice_merge" />
-      <item index="1" class="java.lang.String" itemvalue="Python.IC_add_time" />
-      <item index="2" class="java.lang.String" itemvalue="Python.merge" />
-      <item index="3" class="java.lang.String" itemvalue="Python.find_substructure" />
-      <item index="4" class="java.lang.String" itemvalue="Python.networkx_test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.IC_add_time" />
+      <item index="1" class="java.lang.String" itemvalue="Python.find_substructure" />
+      <item index="2" class="java.lang.String" itemvalue="Python.networkx_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.diff" />
+      <item index="4" class="java.lang.String" itemvalue="Python.analyze_features" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.IC_add_time" />
-        <item index="1" class="java.lang.String" itemvalue="Python.find_substructure" />
-        <item index="2" class="java.lang.String" itemvalue="Python.networkx_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.slice_merge" />
-        <item index="4" class="java.lang.String" itemvalue="Python.merge" />
+        <item index="0" class="java.lang.String" itemvalue="Python.analyze_features" />
+        <item index="1" class="java.lang.String" itemvalue="Python.diff" />
+        <item index="2" class="java.lang.String" itemvalue="Python.IC_add_time" />
+        <item index="3" class="java.lang.String" itemvalue="Python.find_substructure" />
+        <item index="4" class="java.lang.String" itemvalue="Python.networkx_test" />
       </list>
     </recent_temporary>
   </component>
@@ -514,14 +546,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4310722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32100108" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5229211" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28400436" sideWeight="0.47707888" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28400436" sideWeight="0.47707888" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.4749467" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18933624" sideWeight="0.4749467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34494016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4074074" sideWeight="0.65208334" order="3" side_tool="false" content_ui="tabs" />
@@ -532,7 +566,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -609,269 +642,47 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2014_2019.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="75" column="31" lean-forward="true" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2006_2007.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2008_2009.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2009_2010.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2010_2011.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2011_2012.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2012_2013.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2013_2014.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2014_2015.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2015_2016.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2016_2017.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2017_2018.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift1/Enhong Chen_2007_2008.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2000_2005.png">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/xionghui_shift2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2002_2007.png">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/peijian_shift2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2004_2009.png">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/shift2/Jiawei Han_2011_2016.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2006_2011.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2008_2013.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2010_2015.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Jian Pei_2012_2017.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/include_seeds/shift2/Enhong Chen_2008_2013.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/dynamic_influence_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/construct_net_0808.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/construct_net.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/shift2/Jiawei Han_2009_2014.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="57" column="2" lean-forward="false" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/shift2/Jiawei Han_2007_2012.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/first_time_0809_first_site_first_time_with_cheneh.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="0" column="12327" lean-forward="false" selection-start-line="0" selection-start-column="12317" selection-end-line="0" selection-end-column="12327" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/simple_path.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/show_dots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="76" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="76" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/edges.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/networkx/algorithms/operators/binary.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6996">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/networkx/drawing/nx_agraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrap/together.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice_include_seed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/construct_net_with_year.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="82" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift_2.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/draw_nets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/merge_net/shift2/Enhong Chen_2008_2013.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrap/kis.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrap/clearn_datas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrap/kdd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/merge_net/shift2/Enhong Chen_2006_2011.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/IC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="572">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -882,26 +693,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/edges.png">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/noshift/shift2Enhong Chen_2012_2017.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
+    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="-1189">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/IC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding>
-            <element signature="e#785#816#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="409">
+          <caret line="93" column="30" lean-forward="false" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/noshift/shift2Enhong Chen_2010_2015.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/noshift/shift2Enhong Chen_2006_2011.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/hanjiawei_shift2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/ICres.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/construct_net_with_year.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-757">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -910,17 +746,55 @@
         <state relative-caret-position="748">
           <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
-            <element signature="e#175#188#0" expanded="true" />
+            <element signature="e#175#188#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/hanjiawei_shift2.png">
+    <entry file="file://$PROJECT_DIR$/network/network_dict_0804_one_hop_x.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/test_0807.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/test_0808.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flow.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flow1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flow.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/peijian_shift2.png">
+    <entry file="file://$PROJECT_DIR$/network/relationship/basic.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -930,26 +804,205 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/xionghui_shift2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift_2.dot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="532">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/find_substructure.py">
+    <entry file="file://$PROJECT_DIR$/network/inter_res/chenenhong.dot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/chenenhong_10_.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/chenenhong_10_1631.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/chenenhong_time_10.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2532">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/xionghui_time_30.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/chenenhong_time_50.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/IC0815/compare/Enhong Chen_0001.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/IC0815/Enhong Chen_0001.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2092">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/chenenhong_shift_2.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/Enhong Chen_0001.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2092">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/inter_res/IC0814/chenenhong_10.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="90" column="30" lean-forward="false" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/show_dots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="33" />
           <folding>
-            <element signature="e#143#156#0" expanded="true" />
+            <element signature="e#154#170#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice_include_seed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1408">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/compares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_shift_2.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_10.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/chenenhong_10.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/networkx_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="55" />
+          <folding>
+            <element signature="e#136#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/comp/chenenhong_shift_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#156#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/find_feature/analyze_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="e#136#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

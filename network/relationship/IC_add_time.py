@@ -51,6 +51,7 @@ def draw_trees(author,time1,time2,):
     :return:
     '''
     G = nx.DiGraph()
+    G2 = nx.DiGraph()
     edge_count = {}
     result_set = set()
     with codecs.open('./inter_res/ICres.txt', 'r', encoding='utf-8', errors='ignore') as f:
@@ -73,6 +74,11 @@ def draw_trees(author,time1,time2,):
                        names[edge.split('->')[1].strip().strip('"')],
 
                        year = network[edge.split('->')[0].strip().strip('"')][edge.split('->')[1].strip().strip('"')]['year'])
+            G2.add_edge(edge.split('->')[0].strip().strip('"'),
+                       edge.split('->')[1].strip().strip('"'),
+
+                       year=network[edge.split('->')[0].strip().strip('"')][edge.split('->')[1].strip().strip('"')][
+                           'year'])
 
 
 
@@ -81,7 +87,11 @@ def draw_trees(author,time1,time2,):
 
 
     fn = './inter_res/netx/net_' + author + '_' + str(int(time1)) + '_' + str(int(time2)) + '.pkl'
-    pickle.dump(G, open(fn, 'wb'))
+
+    fn2 = './inter_res/netx/net_' + author + '_' + str(int(time1)) + '_' + str(int(time2)) + '_onlyNum.pkl'
+    # pickle.dump(G, open(fn, 'wb'))
+
+    pickle.dump(G2,open(fn2,'wb'))
     # fr.write('}')
 
     return result_set
@@ -108,11 +118,11 @@ def draw_final(net, author, step, shift):
         ICmodel(net,roots,10000,time1+ (i+1) * shift, time1 + (i+1)*shift + step)
 
 def main():
-    graphviz = GraphvizOutput()
-    graphviz.output_file = 'basic.png'
-
-    with PyCallGraph(output=graphviz):
-        draw_final(network, '2136372366', 5, 2)
+    # graphviz = GraphvizOutput()
+    # graphviz.output_file = 'basic.png'
+    #
+    # with PyCallGraph(output=graphviz):
+    draw_final(network, '2136372366', 5, 2)
 
 if __name__ == '__main__':
     main()

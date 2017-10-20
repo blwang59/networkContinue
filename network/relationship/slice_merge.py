@@ -15,7 +15,7 @@ import matplotlib
 from networkx.drawing.nx_pydot import write_dot
 G=nx.DiGraph()
 
-pattern = re.compile(r'^net_2126330539.*pkl$')
+pattern = re.compile(r'^net_2136372366.*onlyNum\.pkl$')
 
 for files in os.listdir('./inter_res/netx/'):
 
@@ -38,14 +38,14 @@ pos = graphviz_layout(G,prog= 'dot')
 edge_labels = nx.get_edge_attributes(G,'year')
 # print(edge_labels)
 
-fn = './inter_res/netx/peijian.pkl'
+fn = './inter_res/netx/chenenhong_onlyNum.pkl'
 pickle.dump(G, open(fn, 'wb'))
 
 
 nx.draw_networkx_edge_labels(G, pos, edge_labels = edge_labels,font_size=10)
 nx.draw(G,pos,with_labels=True,font_size = 10)
 # nx.draw_networkx_nodes()
-plt.savefig('./results/peijian_shift2.png')
+plt.savefig('./results/chenenhong_onlyNum_shift2.png')
 plt.show()
 
 

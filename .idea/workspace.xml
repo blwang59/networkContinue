@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396badcf-d83f-4d12-b39c-d9dec29f34bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/find_feature/chenenhong_onlyNum.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/find_feature/analyze_features.py" afterPath="$PROJECT_DIR$/network/find_feature/analyze_features.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/IC_add_time.py" afterPath="$PROJECT_DIR$/network/relationship/IC_add_time.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" afterPath="$PROJECT_DIR$/network/relationship/inter_res/ICres.txt" />
@@ -27,8 +25,8 @@
       <file leaf-file-name="slice_merge.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/slice_merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="66" />
+            <state relative-caret-position="322">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -37,11 +35,21 @@
       <file leaf-file-name="analyze_features.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/network/find_feature/analyze_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="71" column="39" lean-forward="true" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+            <state relative-caret-position="-44">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
               <folding>
                 <element signature="e#136#147#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xionghui_onlyNum.pkl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/xionghui_onlyNum.pkl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/scrap/kdd.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="125" column="56" lean-forward="true" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="56" />
+              <caret line="125" column="56" lean-forward="false" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -59,8 +67,8 @@
       <file leaf-file-name="常用名字.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -69,8 +77,8 @@
       <file leaf-file-name="IC_add_time.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-616">
-              <caret line="68" column="99" lean-forward="false" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="99" />
+            <state relative-caret-position="982">
+              <caret line="124" column="35" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
               <folding>
                 <element signature="e#136#147#0" expanded="true" />
               </folding>
@@ -81,8 +89,8 @@
       <file leaf-file-name="time_slice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/relationship/time_slice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-558">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -251,13 +259,6 @@
               <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
               <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="find_feature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="find_feature" type="462c0819:PsiDirectoryNode" />
               <item name="inter_res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,6 +266,21 @@
               <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="inter_res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="networkContinue" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="inter_res" type="462c0819:PsiDirectoryNode" />
+              <item name="netx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="networkContinue" type="b2602c69:ProjectViewProjectNode" />
@@ -598,11 +614,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/results/chenenhong_shift_2.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -973,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/find_feature/inter_res/CitationCount.pkl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -989,44 +992,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scrap/kdd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="125" column="56" lean-forward="false" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/常用名字.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/IC_add_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="68" column="99" lean-forward="false" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="99" />
+        <state relative-caret-position="982">
+          <caret line="124" column="35" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
           <folding>
             <element signature="e#136#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/relationship/time_slice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/relationship/slice_merge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="66" />
+        <state relative-caret-position="322">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrap/kdd.py">
+    <entry file="file://$PROJECT_DIR$/network/relationship/inter_res/netx/xionghui_onlyNum.pkl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="125" column="56" lean-forward="true" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/network/find_feature/analyze_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="71" column="39" lean-forward="true" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        <state relative-caret-position="-44">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding>
             <element signature="e#136#147#0" expanded="true" />
           </folding>

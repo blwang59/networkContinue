@@ -20,13 +20,7 @@ import csv
 from time import sleep
 import random
 import matplotlib.pyplot as plt
-network = pickle.load(open('../relationship/inter_res/netx/xionghui_onlyNum.pkl', 'rb'))
 
-degree_centralities = nx.degree_centrality(network)
-in_degree_centralities = nx.in_degree_centrality(network)
-out_degree_centralities = nx.out_degree_centrality(network)
-
-page_ranks = nx.pagerank(network)
 
 CitationCount = {}
 totalPaper ={}
@@ -38,8 +32,8 @@ def main():
     # names = json.load(open('../inter_res/name_per_author.json', encoding='utf-8', errors='ignore'))
     # CitationCount = pickle.load(open('./inter_res/CitationCount.pkl','rb'))
     # totalPaper = pickle.load(open('./inter_res/totalPaper.pkl', 'rb'))
-
-    for authorNum in network.nodes():
+    networks = pickle.load(open('../relationship/inter_res/nx.pkl','rb'))
+    for authorNum in networks.nodes():
         auID = authorNum
 
         url = "https://academic.microsoft.com/api/browse/GetEntityDetails?entityId="+auID+"&correlationId=065e52cf-f6b1-4e89-ad4b-f2627cbb6130"
@@ -54,13 +48,16 @@ def main():
 
         content = requests.get(url,headers = headers) # 用post提交form data
         contents = json.loads(content.text)
+        if contents != '' and 'estimatedCitationCount' in contents and 'publications' in contents\
+                and 'm' in contents['publications'] \
+                and 'lt' in contents['publications']['m']:
+            CitationCount[auID]=contents['estimatedCitationCount']
+            totalPaper[auID] = contents['publications']['m']['lt']
+            # print(contents['publications']['m']['lt'])
 
-        CitationCount[auID]=contents['estimatedCitationCount']
-        totalPaper[auID] = contents['publications']['m']['lt']
-
-    fn = './inter_res/xionghui_CitationCount.pkl'
+    fn = './inter_res/ALLCitationCount.pkl'
     pickle.dump(CitationCount, open(fn, 'wb'))
-    f = './inter_res/xionghui_totalPaper.pkl'
+    f = './inter_res/ALLtotalPaper.pkl'
     pickle.dump(totalPaper, open(f, 'wb'))
 
     # x = list(CitationCount.keys())
